@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import CodeExample from "./CodeExample";
 
 class Example extends React.Component {
   state = { showCode: false };
@@ -24,7 +25,7 @@ class Example extends React.Component {
 
         <p onClick={this.toggleCode}>{showCode ? "Hide" : "Show"} code</p>
 
-        {showCode && <pre>{code}</pre>}
+        {showCode && <CodeExample code={code} />}
       </div>
     );
   }
