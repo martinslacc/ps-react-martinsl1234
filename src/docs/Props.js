@@ -20,7 +20,7 @@ const Props = ({ props }) => {
               <td>{key}</td>
               <td>{props[key].description}</td>
               <td>{props[key].type.name}</td>
-              <td>{props[key].defaultValue.value}</td>
+              <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
               <td>{props[key].required.toString()}</td>
             </tr>
           );

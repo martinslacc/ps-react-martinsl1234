@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 import ComponentPage from "./ComponentPage";
-import componentData from "./componentData";
+import componentData from "./../components/componentData";
 
 export default class Docs extends React.Component {
   state = {

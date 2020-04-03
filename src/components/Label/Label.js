@@ -11,7 +11,7 @@ function Label({ label, required, htmlFor }) {
 
 Label.propTypes = {
   /** Label text */
-  label: PropTypes.string,
+  label: PropTypes.string.isRequired,
 
   /** Displays asterisk after label if true */
   required: PropTypes.bool,
@@ -21,7 +21,6 @@ Label.propTypes = {
 };
 
 Label.defaultProps = {
-  label: "label",
   required: false,
   htmlFor: ""
 };
