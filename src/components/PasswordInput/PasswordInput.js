@@ -13,14 +13,14 @@ class PasswordInput extends React.Component {
     };
   }
 
-  toggleShowPassword = (event) => {
+  toggleShowPassword = event => {
     if (event) {
       event.preventDefault();
     }
     this.setState(prevState => ({
       showPassword: !prevState.showPassword
     }));
-  }
+  };
 
   render() {
     const {
@@ -71,7 +71,7 @@ PasswordInput.propTypes = {
   htmlId: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   maxLength: PropTypes.number,
   placeHolder: PropTypes.string,
